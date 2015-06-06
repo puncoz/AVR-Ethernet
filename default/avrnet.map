@@ -1,0 +1,650 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                              tcp.o (__do_copy_data)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                              enc28j60.o (__do_clear_bss)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o)
+                              main.o (__eerd_block)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o) (__prologue_saves__)
+c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
+                              c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+flag                0x1               timer.o
+avr_mac             0x6               main.o
+server_ip           0x4               main.o
+flag2               0x1               enc28j60.o
+flag1               0x1               enc28j60.o
+avr_ip              0x4               main.o
+count               0x1               timer.o
+server_mac          0x6               main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
+LOAD enc28j60.o
+LOAD main.o
+LOAD http.o
+LOAD arp.o
+LOAD tcp.o
+LOAD ip.o
+LOAD ethernet.o
+LOAD icmp.o
+LOAD udp.o
+LOAD delay.o
+LOAD timer.o
+LOAD usart.o
+LOAD gsm.o
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2144
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000054      0x8b4 http.o
+ .progmem.data  0x00000908        0x8 udp.o
+                0x00000910                . = ALIGN (0x2)
+                0x00000910                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000910        0x0 linker stubs
+ *(.trampolines*)
+                0x00000910                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000910                __ctors_start = .
+ *(.ctors)
+                0x00000910                __ctors_end = .
+                0x00000910                __dtors_start = .
+ *(.dtors)
+                0x00000910                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000910        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
+                0x00000910                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000910        0xc c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000091c       0x16 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                0x0000091c                __do_copy_data
+ .init4         0x00000932       0x10 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                0x00000932                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000942        0x8 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000094a        0x4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
+                0x0000094a                __vector_1
+                0x0000094a                __vector_12
+                0x0000094a                __bad_interrupt
+                0x0000094a                __vector_6
+                0x0000094a                __vector_3
+                0x0000094a                __vector_13
+                0x0000094a                __vector_17
+                0x0000094a                __vector_19
+                0x0000094a                __vector_7
+                0x0000094a                __vector_5
+                0x0000094a                __vector_4
+                0x0000094a                __vector_9
+                0x0000094a                __vector_2
+                0x0000094a                __vector_15
+                0x0000094a                __vector_8
+                0x0000094a                __vector_14
+                0x0000094a                __vector_10
+                0x0000094a                __vector_16
+                0x0000094a                __vector_18
+                0x0000094a                __vector_20
+ .text          0x0000094e      0x480 enc28j60.o
+                0x00000988                enc28j60SetBank
+                0x00000c36                enc28j60_init
+                0x00000972                enc28j60WriteOp
+                0x000009d6                enc28j60Read
+                0x00000bfa                enc28j60PhyWrite
+                0x00000b04                enc28j60_packet_receive
+                0x00000a56                enc28j60getrev
+                0x00000a10                enc28j60_read_phyreg
+                0x00000a5e                enc28j60_packet_send
+                0x0000094e                enc28j60ReadOp
+                0x000009ea                enc28j60Write
+ .text          0x00000dce      0x162 main.o
+                0x00000ec2                main
+                0x00000dde                server_process
+ .text          0x00000f30      0x7f6 http.o
+                0x0000124c                http_home
+                0x00001228                http_test
+                0x00000f30                http_get_ip
+                0x0000101e                http_control
+                0x0000125a                http_put_request
+                0x000012f2                http_get_variable
+                0x00000f74                hex2int
+                0x000013b2                http_webserver_process
+                0x00000f98                urldecode
+ .text          0x00001726      0x1f4 arp.o
+                0x000017ea                arp_send_reply
+                0x000018b0                arp_who_is
+                0x0000182a                arp_send_request
+                0x00001726                arp_generate_packet
+                0x000017ac                arp_packet_is_arp
+ .text          0x0000191a      0x1be tcp.o
+                0x00001980                tcp_puts_data
+                0x0000195a                tcp_puts_data_p
+                0x0000194c                tcp_get_hlength
+                0x000019a4                tcp_send_packet
+                0x0000191a                tcp_get_dlength
+ .text          0x00001ad8       0xc8 ip.o
+                0x00001ad8                ip_packet_is_ip
+                0x00001b0c                ip_generate_header
+ .text          0x00001ba0       0xba ethernet.o
+                0x00001ba0                eth_generate_header
+                0x00001bda                software_checksum
+ .text          0x00001c5a      0x164 icmp.o
+                0x00001d64                icmp_ping
+                0x00001c9a                icmp_send_reply
+                0x00001c5a                icmp_generate_packet
+                0x00001cf8                icmp_send_request
+ .text          0x00001dbe      0x11a udp.o
+                0x00001dbe                udp_puts_data
+                0x00001e08                udp_generate_header
+                0x00001de2                udp_puts_data_p
+                0x00001e48                udp_receive
+ .text          0x00001ed8       0x40 delay.o
+                0x00001ed8                _delay_ms
+                0x00001ef8                _delay_us
+ .text          0x00001f18       0x66 timer.o
+                0x00001f18                initTimer_heartBeat
+                0x00001f34                __vector_11
+ .text          0x00001f7e       0x76 usart.o
+                0x00001fa6                USART_Receive8BitData
+                0x00001f98                USART_Send9BitData
+                0x00001f7e                Init_USART
+                0x00001fe0                USART_SendString
+                0x00001f90                USART_Send8BitData
+                0x00001fae                USART_Receive9BitData
+                0x00001fd6                USART_Flush
+ .text          0x00001ff4       0xa6 gsm.o
+                0x0000203e                GSM_SendMessage
+                0x00002088                Init_GSM
+                0x00001ff4                GSM_TrfBalance
+ .text          0x0000209a        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text          0x0000209a        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x0000209a        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .text          0x0000209a       0x38 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o)
+                0x0000209a                __eerd_block
+ .text          0x000020d2        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
+ .text          0x000020d2        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
+                0x000020d2                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x000020d2        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000020d2        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000020d2        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000020d2       0x38 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
+                0x000020d2                __prologue_saves__
+ .text.libgcc   0x0000210a       0x36 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
+                0x0000210a                __epilogue_restores__
+                0x00002140                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002140        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                0x00002140                exit
+                0x00002140                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002140        0x4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002144                _etext = .
+
+.data           0x00800060       0x6a load address 0x00002144
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 enc28j60.o
+ .data          0x00800060        0x0 main.o
+ .data          0x00800060        0x0 http.o
+ .data          0x00800060        0x0 arp.o
+ .data          0x00800060        0x1 tcp.o
+ .data          0x00800061        0x2 ip.o
+ .data          0x00800063        0x0 ethernet.o
+ .data          0x00800063        0x2 icmp.o
+                0x00800064                icmp_seq
+                0x00800063                icmp_id
+ .data          0x00800065        0x0 udp.o
+ .data          0x00800065        0x0 delay.o
+ .data          0x00800065        0x0 timer.o
+ .data          0x00800065        0x0 usart.o
+ .data          0x00800065       0x65 gsm.o
+ .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o)
+ .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
+ .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008000ca                . = ALIGN (0x2)
+                0x008000ca                _edata = .
+                0x008000ca                PROVIDE (__data_end, .)
+
+.bss            0x008000ca       0x21
+                0x008000ca                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008000ca        0x3 enc28j60.o
+ .bss           0x008000cd        0x6 main.o
+                0x008000d1                fan
+                0x008000cd                bulb_1
+                0x008000cf                bulb_2
+ .bss           0x008000d3        0x0 http.o
+ .bss           0x008000d3        0x0 arp.o
+ .bss           0x008000d3        0x0 tcp.o
+ .bss           0x008000d3        0x0 ip.o
+ .bss           0x008000d3        0x0 ethernet.o
+ .bss           0x008000d3        0x0 icmp.o
+ .bss           0x008000d3        0x0 udp.o
+ .bss           0x008000d3        0x0 delay.o
+ .bss           0x008000d3        0x0 timer.o
+ .bss           0x008000d3        0x0 usart.o
+ .bss           0x008000d3        0x0 gsm.o
+ .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o)
+ .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
+ .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008000d3        0x2 enc28j60.o
+                0x008000d3                flag2
+                0x008000d4                flag1
+ COMMON         0x008000d5       0x14 main.o
+                0x008000d5                avr_mac
+                0x008000db                server_ip
+                0x008000df                avr_ip
+                0x008000e3                server_mac
+ COMMON         0x008000e9        0x2 timer.o
+                0x008000e9                flag
+                0x008000ea                count
+                0x008000eb                PROVIDE (__bss_end, .)
+                0x00002144                __data_load_start = LOADADDR (.data)
+                0x000021ae                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000eb        0x0
+                0x008000eb                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000eb                PROVIDE (__noinit_end, .)
+                0x008000eb                _end = .
+                0x008000eb                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x8
+ *(.eeprom*)
+ .eeprom        0x00810000        0x8 main.o
+                0x00810000                ee_avr_ip
+                0x00810004                ee_server_ip
+                0x00810008                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1a0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 enc28j60.o
+ .debug_aranges
+                0x00000020       0x20 main.o
+ .debug_aranges
+                0x00000040       0x20 http.o
+ .debug_aranges
+                0x00000060       0x20 arp.o
+ .debug_aranges
+                0x00000080       0x20 tcp.o
+ .debug_aranges
+                0x000000a0       0x20 ip.o
+ .debug_aranges
+                0x000000c0       0x20 ethernet.o
+ .debug_aranges
+                0x000000e0       0x20 icmp.o
+ .debug_aranges
+                0x00000100       0x20 udp.o
+ .debug_aranges
+                0x00000120       0x20 delay.o
+ .debug_aranges
+                0x00000140       0x20 timer.o
+ .debug_aranges
+                0x00000160       0x20 usart.o
+ .debug_aranges
+                0x00000180       0x20 gsm.o
+
+.debug_pubnames
+                0x00000000      0x6a7
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x10c enc28j60.o
+ .debug_pubnames
+                0x0000010c       0xb3 main.o
+ .debug_pubnames
+                0x000001bf       0xc3 http.o
+ .debug_pubnames
+                0x00000282       0x8b arp.o
+ .debug_pubnames
+                0x0000030d       0x88 tcp.o
+ .debug_pubnames
+                0x00000395       0x51 ip.o
+ .debug_pubnames
+                0x000003e6       0x54 ethernet.o
+ .debug_pubnames
+                0x0000043a       0x90 icmp.o
+ .debug_pubnames
+                0x000004ca       0x74 udp.o
+ .debug_pubnames
+                0x0000053e       0x2e delay.o
+ .debug_pubnames
+                0x0000056c       0x4d timer.o
+ .debug_pubnames
+                0x000005b9       0xa8 usart.o
+ .debug_pubnames
+                0x00000661       0x46 gsm.o
+
+.debug_info     0x00000000     0x3e02
+ *(.debug_info)
+ .debug_info    0x00000000      0x716 enc28j60.o
+ .debug_info    0x00000716      0x594 main.o
+ .debug_info    0x00000caa      0xf48 http.o
+ .debug_info    0x00001bf2      0x54b arp.o
+ .debug_info    0x0000213d      0x592 tcp.o
+ .debug_info    0x000026cf      0x433 ip.o
+ .debug_info    0x00002b02      0x42f ethernet.o
+ .debug_info    0x00002f31      0x4d6 icmp.o
+ .debug_info    0x00003407      0x5d5 udp.o
+ .debug_info    0x000039dc       0xb8 delay.o
+ .debug_info    0x00003a94       0xb9 timer.o
+ .debug_info    0x00003b4d      0x1c9 usart.o
+ .debug_info    0x00003d16       0xec gsm.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000     0x11fc
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x24e enc28j60.o
+ .debug_abbrev  0x0000024e      0x1d7 main.o
+ .debug_abbrev  0x00000425      0x2c0 http.o
+ .debug_abbrev  0x000006e5      0x16e arp.o
+ .debug_abbrev  0x00000853      0x16d tcp.o
+ .debug_abbrev  0x000009c0      0x143 ip.o
+ .debug_abbrev  0x00000b03      0x152 ethernet.o
+ .debug_abbrev  0x00000c55      0x150 icmp.o
+ .debug_abbrev  0x00000da5      0x1b9 udp.o
+ .debug_abbrev  0x00000f5e       0x81 delay.o
+ .debug_abbrev  0x00000fdf       0x77 timer.o
+ .debug_abbrev  0x00001056      0x12b usart.o
+ .debug_abbrev  0x00001181       0x7b gsm.o
+
+.debug_line     0x00000000     0x1eed
+ *(.debug_line)
+ .debug_line    0x00000000      0x6e6 enc28j60.o
+ .debug_line    0x000006e6      0x230 main.o
+ .debug_line    0x00000916      0x689 http.o
+ .debug_line    0x00000f9f      0x1d3 arp.o
+ .debug_line    0x00001172      0x2cd tcp.o
+ .debug_line    0x0000143f      0x139 ip.o
+ .debug_line    0x00001578      0x104 ethernet.o
+ .debug_line    0x0000167c      0x1d4 icmp.o
+ .debug_line    0x00001850      0x1f9 udp.o
+ .debug_line    0x00001a49       0xaf delay.o
+ .debug_line    0x00001af8      0x128 timer.o
+ .debug_line    0x00001c20      0x1cc usart.o
+ .debug_line    0x00001dec      0x101 gsm.o
+
+.debug_frame    0x00000000      0x480
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xc0 enc28j60.o
+ .debug_frame   0x000000c0       0x40 main.o
+ .debug_frame   0x00000100       0xa0 http.o
+ .debug_frame   0x000001a0       0x60 arp.o
+ .debug_frame   0x00000200       0x60 tcp.o
+ .debug_frame   0x00000260       0x30 ip.o
+ .debug_frame   0x00000290       0x30 ethernet.o
+ .debug_frame   0x000002c0       0x50 icmp.o
+ .debug_frame   0x00000310       0x50 udp.o
+ .debug_frame   0x00000360       0x30 delay.o
+ .debug_frame   0x00000390       0x30 timer.o
+ .debug_frame   0x000003c0       0x80 usart.o
+ .debug_frame   0x00000440       0x40 gsm.o
+
+.debug_str      0x00000000      0x829
+ *(.debug_str)
+ .debug_str     0x00000000      0x2b8 enc28j60.o
+                                0x319 (size before relaxing)
+ .debug_str     0x000002b8       0xb3 main.o
+                                0x2d1 (size before relaxing)
+ .debug_str     0x0000036b      0x138 http.o
+                                0x350 (size before relaxing)
+ .debug_str     0x000004a3       0x61 arp.o
+                                0x29d (size before relaxing)
+ .debug_str     0x00000504       0xa4 tcp.o
+                                0x2f1 (size before relaxing)
+ .debug_str     0x000005a8       0x4e ip.o
+                                0x25e (size before relaxing)
+ .debug_str     0x000005f6       0x3f ethernet.o
+                                0x253 (size before relaxing)
+ .debug_str     0x00000635       0x5c icmp.o
+                                0x283 (size before relaxing)
+ .debug_str     0x00000691       0x4c udp.o
+                                0x2c0 (size before relaxing)
+ .debug_str     0x000006dd       0x3c delay.o
+                                 0x9e (size before relaxing)
+ .debug_str     0x00000719       0x36 timer.o
+                                0x107 (size before relaxing)
+ .debug_str     0x0000074f       0x9a usart.o
+                                0x17d (size before relaxing)
+ .debug_str     0x000007e9       0x40 gsm.o
+                                0x10e (size before relaxing)
+
+.debug_loc      0x00000000     0x1337
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x1f7 enc28j60.o
+ .debug_loc     0x000001f7       0x2b main.o
+ .debug_loc     0x00000222      0x650 http.o
+ .debug_loc     0x00000872      0x1bb arp.o
+ .debug_loc     0x00000a2d      0x2de tcp.o
+ .debug_loc     0x00000d0b       0xa3 ip.o
+ .debug_loc     0x00000dae       0xb6 ethernet.o
+ .debug_loc     0x00000e64      0x1b3 icmp.o
+ .debug_loc     0x00001017      0x1e6 udp.o
+ .debug_loc     0x000011fd       0x9a usart.o
+ .debug_loc     0x00001297       0xa0 gsm.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(avrnet.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x30
+ .debug_ranges  0x00000000       0x18 enc28j60.o
+ .debug_ranges  0x00000018       0x18 usart.o
