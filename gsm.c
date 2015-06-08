@@ -20,7 +20,7 @@ void GSM_SendMessage(char *number,char *msg){
 	USART_SendString("\"\r");
 	_delay_ms(6000);
 
-	USART_SendString("emBank verification code: ");
+//	USART_SendString("emBank verification code: ");
 	USART_SendString(msg);
 	USART_SendString("\x1A");
 

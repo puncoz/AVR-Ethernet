@@ -146,7 +146,7 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2144
+.text           0x00000000     0x2148
  *(.vectors)
  .vectors       0x00000000       0x54 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -236,86 +236,86 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
                 0x00000a5e                enc28j60_packet_send
                 0x0000094e                enc28j60ReadOp
                 0x000009ea                enc28j60Write
- .text          0x00000dce      0x162 main.o
+ .text          0x00000dce      0x16e main.o
                 0x00000ec2                main
                 0x00000dde                server_process
- .text          0x00000f30      0x7f6 http.o
-                0x0000124c                http_home
-                0x00001228                http_test
-                0x00000f30                http_get_ip
-                0x0000101e                http_control
-                0x0000125a                http_put_request
-                0x000012f2                http_get_variable
-                0x00000f74                hex2int
-                0x000013b2                http_webserver_process
-                0x00000f98                urldecode
- .text          0x00001726      0x1f4 arp.o
-                0x000017ea                arp_send_reply
-                0x000018b0                arp_who_is
-                0x0000182a                arp_send_request
-                0x00001726                arp_generate_packet
-                0x000017ac                arp_packet_is_arp
- .text          0x0000191a      0x1be tcp.o
-                0x00001980                tcp_puts_data
-                0x0000195a                tcp_puts_data_p
-                0x0000194c                tcp_get_hlength
-                0x000019a4                tcp_send_packet
-                0x0000191a                tcp_get_dlength
- .text          0x00001ad8       0xc8 ip.o
-                0x00001ad8                ip_packet_is_ip
-                0x00001b0c                ip_generate_header
- .text          0x00001ba0       0xba ethernet.o
-                0x00001ba0                eth_generate_header
-                0x00001bda                software_checksum
- .text          0x00001c5a      0x164 icmp.o
-                0x00001d64                icmp_ping
-                0x00001c9a                icmp_send_reply
-                0x00001c5a                icmp_generate_packet
-                0x00001cf8                icmp_send_request
- .text          0x00001dbe      0x11a udp.o
-                0x00001dbe                udp_puts_data
-                0x00001e08                udp_generate_header
-                0x00001de2                udp_puts_data_p
-                0x00001e48                udp_receive
- .text          0x00001ed8       0x40 delay.o
-                0x00001ed8                _delay_ms
-                0x00001ef8                _delay_us
- .text          0x00001f18       0x66 timer.o
-                0x00001f18                initTimer_heartBeat
-                0x00001f34                __vector_11
- .text          0x00001f7e       0x76 usart.o
-                0x00001fa6                USART_Receive8BitData
-                0x00001f98                USART_Send9BitData
-                0x00001f7e                Init_USART
-                0x00001fe0                USART_SendString
-                0x00001f90                USART_Send8BitData
-                0x00001fae                USART_Receive9BitData
-                0x00001fd6                USART_Flush
- .text          0x00001ff4       0xa6 gsm.o
-                0x0000203e                GSM_SendMessage
-                0x00002088                Init_GSM
-                0x00001ff4                GSM_TrfBalance
- .text          0x0000209a        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
- .text          0x0000209a        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
- .text          0x0000209a        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
- .text          0x0000209a       0x38 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o)
-                0x0000209a                __eerd_block
- .text          0x000020d2        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
- .text          0x000020d2        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
-                0x000020d2                . = ALIGN (0x2)
+ .text          0x00000f3c      0x7f6 http.o
+                0x00001258                http_home
+                0x00001234                http_test
+                0x00000f3c                http_get_ip
+                0x0000102a                http_control
+                0x00001266                http_put_request
+                0x000012fe                http_get_variable
+                0x00000f80                hex2int
+                0x000013be                http_webserver_process
+                0x00000fa4                urldecode
+ .text          0x00001732      0x1f4 arp.o
+                0x000017f6                arp_send_reply
+                0x000018bc                arp_who_is
+                0x00001836                arp_send_request
+                0x00001732                arp_generate_packet
+                0x000017b8                arp_packet_is_arp
+ .text          0x00001926      0x1be tcp.o
+                0x0000198c                tcp_puts_data
+                0x00001966                tcp_puts_data_p
+                0x00001958                tcp_get_hlength
+                0x000019b0                tcp_send_packet
+                0x00001926                tcp_get_dlength
+ .text          0x00001ae4       0xc8 ip.o
+                0x00001ae4                ip_packet_is_ip
+                0x00001b18                ip_generate_header
+ .text          0x00001bac       0xba ethernet.o
+                0x00001bac                eth_generate_header
+                0x00001be6                software_checksum
+ .text          0x00001c66      0x164 icmp.o
+                0x00001d70                icmp_ping
+                0x00001ca6                icmp_send_reply
+                0x00001c66                icmp_generate_packet
+                0x00001d04                icmp_send_request
+ .text          0x00001dca      0x11a udp.o
+                0x00001dca                udp_puts_data
+                0x00001e14                udp_generate_header
+                0x00001dee                udp_puts_data_p
+                0x00001e54                udp_receive
+ .text          0x00001ee4       0x40 delay.o
+                0x00001ee4                _delay_ms
+                0x00001f04                _delay_us
+ .text          0x00001f24       0x66 timer.o
+                0x00001f24                initTimer_heartBeat
+                0x00001f40                __vector_11
+ .text          0x00001f8a       0x76 usart.o
+                0x00001fb2                USART_Receive8BitData
+                0x00001fa4                USART_Send9BitData
+                0x00001f8a                Init_USART
+                0x00001fec                USART_SendString
+                0x00001f9c                USART_Send8BitData
+                0x00001fba                USART_Receive9BitData
+                0x00001fe2                USART_Flush
+ .text          0x00002000       0x9e gsm.o
+                0x0000204a                GSM_SendMessage
+                0x0000208c                Init_GSM
+                0x00002000                GSM_TrfBalance
+ .text          0x0000209e        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text          0x0000209e        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x0000209e        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .text          0x0000209e       0x38 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o)
+                0x0000209e                __eerd_block
+ .text          0x000020d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
+ .text          0x000020d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
+                0x000020d6                . = ALIGN (0x2)
  *(.text.*)
- .text.libgcc   0x000020d2        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x000020d2        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x000020d2        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x000020d2       0x38 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
-                0x000020d2                __prologue_saves__
- .text.libgcc   0x0000210a       0x36 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
-                0x0000210a                __epilogue_restores__
-                0x00002140                . = ALIGN (0x2)
+ .text.libgcc   0x000020d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000020d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000020d6        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000020d6       0x38 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
+                0x000020d6                __prologue_saves__
+ .text.libgcc   0x0000210e       0x36 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
+                0x0000210e                __epilogue_restores__
+                0x00002144                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002140        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
-                0x00002140                exit
-                0x00002140                _exit
+ .fini9         0x00002144        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                0x00002144                exit
+                0x00002144                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -334,11 +334,11 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002140        0x4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002144        0x4 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00002144                _etext = .
+                0x00002148                _etext = .
 
-.data           0x00800060       0x6a load address 0x00002144
+.data           0x00800060       0x50 load address 0x00002148
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
@@ -356,70 +356,71 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
  .data          0x00800065        0x0 delay.o
  .data          0x00800065        0x0 timer.o
  .data          0x00800065        0x0 usart.o
- .data          0x00800065       0x65 gsm.o
- .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
- .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
- .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
- .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o)
- .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
- .data          0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
+ .data          0x00800065       0x4a gsm.o
+ .data          0x008000af        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .data          0x008000af        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x008000af        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x008000af        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o)
+ .data          0x008000af        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
+ .data          0x008000af        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
  *(.data*)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x008000ca                . = ALIGN (0x2)
-                0x008000ca                _edata = .
-                0x008000ca                PROVIDE (__data_end, .)
+                0x008000b0                . = ALIGN (0x2)
+ *fill*         0x008000af        0x1 00
+                0x008000b0                _edata = .
+                0x008000b0                PROVIDE (__data_end, .)
 
-.bss            0x008000ca       0x21
-                0x008000ca                PROVIDE (__bss_start, .)
+.bss            0x008000b0       0x21
+                0x008000b0                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x008000ca        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
- .bss           0x008000ca        0x3 enc28j60.o
- .bss           0x008000cd        0x6 main.o
-                0x008000d1                fan
-                0x008000cd                bulb_1
-                0x008000cf                bulb_2
- .bss           0x008000d3        0x0 http.o
- .bss           0x008000d3        0x0 arp.o
- .bss           0x008000d3        0x0 tcp.o
- .bss           0x008000d3        0x0 ip.o
- .bss           0x008000d3        0x0 ethernet.o
- .bss           0x008000d3        0x0 icmp.o
- .bss           0x008000d3        0x0 udp.o
- .bss           0x008000d3        0x0 delay.o
- .bss           0x008000d3        0x0 timer.o
- .bss           0x008000d3        0x0 usart.o
- .bss           0x008000d3        0x0 gsm.o
- .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
- .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
- .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
- .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o)
- .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
- .bss           0x008000d3        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
+ .bss           0x008000b0        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008000b0        0x3 enc28j60.o
+ .bss           0x008000b3        0x6 main.o
+                0x008000b7                fan
+                0x008000b3                bulb_1
+                0x008000b5                bulb_2
+ .bss           0x008000b9        0x0 http.o
+ .bss           0x008000b9        0x0 arp.o
+ .bss           0x008000b9        0x0 tcp.o
+ .bss           0x008000b9        0x0 ip.o
+ .bss           0x008000b9        0x0 ethernet.o
+ .bss           0x008000b9        0x0 icmp.o
+ .bss           0x008000b9        0x0 udp.o
+ .bss           0x008000b9        0x0 delay.o
+ .bss           0x008000b9        0x0 timer.o
+ .bss           0x008000b9        0x0 usart.o
+ .bss           0x008000b9        0x0 gsm.o
+ .bss           0x008000b9        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .bss           0x008000b9        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008000b9        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008000b9        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(eerd_block.o)
+ .bss           0x008000b9        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_prologue.o)
+ .bss           0x008000b9        0x0 c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_epilogue.o)
  *(.bss*)
  *(COMMON)
- COMMON         0x008000d3        0x2 enc28j60.o
-                0x008000d3                flag2
-                0x008000d4                flag1
- COMMON         0x008000d5       0x14 main.o
-                0x008000d5                avr_mac
-                0x008000db                server_ip
-                0x008000df                avr_ip
-                0x008000e3                server_mac
- COMMON         0x008000e9        0x2 timer.o
-                0x008000e9                flag
-                0x008000ea                count
-                0x008000eb                PROVIDE (__bss_end, .)
-                0x00002144                __data_load_start = LOADADDR (.data)
-                0x000021ae                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x008000b9        0x2 enc28j60.o
+                0x008000b9                flag2
+                0x008000ba                flag1
+ COMMON         0x008000bb       0x14 main.o
+                0x008000bb                avr_mac
+                0x008000c1                server_ip
+                0x008000c5                avr_ip
+                0x008000c9                server_mac
+ COMMON         0x008000cf        0x2 timer.o
+                0x008000cf                flag
+                0x008000d0                count
+                0x008000d1                PROVIDE (__bss_end, .)
+                0x00002148                __data_load_start = LOADADDR (.data)
+                0x00002198                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008000eb        0x0
-                0x008000eb                PROVIDE (__noinit_start, .)
+.noinit         0x008000d1        0x0
+                0x008000d1                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x008000eb                PROVIDE (__noinit_end, .)
-                0x008000eb                _end = .
-                0x008000eb                PROVIDE (__heap_start, .)
+                0x008000d1                PROVIDE (__noinit_end, .)
+                0x008000d1                _end = .
+                0x008000d1                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x8
  *(.eeprom*)
@@ -568,18 +569,18 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
 .debug_line     0x00000000     0x1eed
  *(.debug_line)
  .debug_line    0x00000000      0x6e6 enc28j60.o
- .debug_line    0x000006e6      0x230 main.o
- .debug_line    0x00000916      0x689 http.o
- .debug_line    0x00000f9f      0x1d3 arp.o
- .debug_line    0x00001172      0x2cd tcp.o
- .debug_line    0x0000143f      0x139 ip.o
- .debug_line    0x00001578      0x104 ethernet.o
- .debug_line    0x0000167c      0x1d4 icmp.o
- .debug_line    0x00001850      0x1f9 udp.o
- .debug_line    0x00001a49       0xaf delay.o
- .debug_line    0x00001af8      0x128 timer.o
- .debug_line    0x00001c20      0x1cc usart.o
- .debug_line    0x00001dec      0x101 gsm.o
+ .debug_line    0x000006e6      0x238 main.o
+ .debug_line    0x0000091e      0x689 http.o
+ .debug_line    0x00000fa7      0x1d3 arp.o
+ .debug_line    0x0000117a      0x2cd tcp.o
+ .debug_line    0x00001447      0x139 ip.o
+ .debug_line    0x00001580      0x104 ethernet.o
+ .debug_line    0x00001684      0x1d4 icmp.o
+ .debug_line    0x00001858      0x1f9 udp.o
+ .debug_line    0x00001a51       0xaf delay.o
+ .debug_line    0x00001b00      0x128 timer.o
+ .debug_line    0x00001c28      0x1cc usart.o
+ .debug_line    0x00001df4       0xf9 gsm.o
 
 .debug_frame    0x00000000      0x480
  *(.debug_frame)
@@ -597,34 +598,34 @@ LOAD c:/winavr-20090313/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
  .debug_frame   0x000003c0       0x80 usart.o
  .debug_frame   0x00000440       0x40 gsm.o
 
-.debug_str      0x00000000      0x829
+.debug_str      0x00000000      0x808
  *(.debug_str)
- .debug_str     0x00000000      0x2b8 enc28j60.o
-                                0x319 (size before relaxing)
- .debug_str     0x000002b8       0xb3 main.o
-                                0x2d1 (size before relaxing)
- .debug_str     0x0000036b      0x138 http.o
-                                0x350 (size before relaxing)
- .debug_str     0x000004a3       0x61 arp.o
-                                0x29d (size before relaxing)
- .debug_str     0x00000504       0xa4 tcp.o
-                                0x2f1 (size before relaxing)
- .debug_str     0x000005a8       0x4e ip.o
-                                0x25e (size before relaxing)
- .debug_str     0x000005f6       0x3f ethernet.o
-                                0x253 (size before relaxing)
- .debug_str     0x00000635       0x5c icmp.o
-                                0x283 (size before relaxing)
- .debug_str     0x00000691       0x4c udp.o
-                                0x2c0 (size before relaxing)
- .debug_str     0x000006dd       0x3c delay.o
-                                 0x9e (size before relaxing)
- .debug_str     0x00000719       0x36 timer.o
-                                0x107 (size before relaxing)
- .debug_str     0x0000074f       0x9a usart.o
-                                0x17d (size before relaxing)
- .debug_str     0x000007e9       0x40 gsm.o
-                                0x10e (size before relaxing)
+ .debug_str     0x00000000      0x297 enc28j60.o
+                                0x2f8 (size before relaxing)
+ .debug_str     0x00000297       0xb3 main.o
+                                0x2b0 (size before relaxing)
+ .debug_str     0x0000034a      0x138 http.o
+                                0x32f (size before relaxing)
+ .debug_str     0x00000482       0x61 arp.o
+                                0x27c (size before relaxing)
+ .debug_str     0x000004e3       0xa4 tcp.o
+                                0x2d0 (size before relaxing)
+ .debug_str     0x00000587       0x4e ip.o
+                                0x23d (size before relaxing)
+ .debug_str     0x000005d5       0x3f ethernet.o
+                                0x232 (size before relaxing)
+ .debug_str     0x00000614       0x5c icmp.o
+                                0x262 (size before relaxing)
+ .debug_str     0x00000670       0x4c udp.o
+                                0x29f (size before relaxing)
+ .debug_str     0x000006bc       0x3c delay.o
+                                 0x7d (size before relaxing)
+ .debug_str     0x000006f8       0x36 timer.o
+                                 0xe6 (size before relaxing)
+ .debug_str     0x0000072e       0x9a usart.o
+                                0x15c (size before relaxing)
+ .debug_str     0x000007c8       0x40 gsm.o
+                                 0xed (size before relaxing)
 
 .debug_loc      0x00000000     0x1337
  *(.debug_loc)

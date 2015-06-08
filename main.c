@@ -28,8 +28,8 @@ IP_ADDR server_ip;
 
 // Change your avr and server ip address here
 // avr and server ip address are stored in eeprom
-BYTE ee_avr_ip[4] EEMEM = { 192, 168, 53, 160 };
-BYTE ee_server_ip[4] EEMEM = { 192, 168, 53, 1 };
+BYTE ee_avr_ip[4] EEMEM = { 192, 168, 1, 160 };
+BYTE ee_server_ip[4] EEMEM = { 192, 168, 1, 1 };
 
 // initialize status/states of bulb and fan
 // 0: OFF; 1: ON
@@ -133,6 +133,9 @@ int main (void)
 
 	// initialiing enc28j60/Ehternet IC
 	enc28j60_init( (BYTE*)&avr_mac );
+
+	// sending message
+	GSM_SendMessage('9849057718', 'Test Message from GSM Server.');
 	
 	// loop forever
 	// Infinite looping for continuous process
